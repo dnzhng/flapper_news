@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-		<script src="/javascripts/angularApp.js"></script>
+		<script src="javascripts/angularApp.js"></script>
 		<style> .glyphicon-thumbs-up { cursor: pointer; } </style>
 	</head>
 	<body ng-app="flapperNews">
@@ -33,7 +33,8 @@
 						{{post.title}}
 					</span>
 					<span>
-						<a href="#/posts/{{$index}}">Comments</a>
+						<a href='#/posts/{{post._id}}'>Comments</a>
+						{{post.comments.length}}
 					</span>
 				</span>
 			</div>
